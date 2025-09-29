@@ -1,0 +1,203 @@
+body{
+    background-color: #fff;
+}
+
+
+/*①General Styling*/
+.project-detail {
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+
+/*②Section Title */
+.project-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+
+/*③Project Intro (Top) */
+.project-intro {
+  background-color: #fff;
+  text-align: center;
+}
+
+.project-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  background: #DBE3EB;
+  padding:5rem;
+  background-image: url('images/henly.png'); /* 画像のパス */
+  background-size: cover;   /* 画像を要素いっぱいに表示 */
+  background-position: center; /* 中央に配置 */
+}
+
+.project-heading h1 {
+  font-size: 2.8rem;
+  margin: 1rem;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.project-detail h4 {
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 4px;
+}
+.project-body {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+
+/*④Project Meta Info (Client / Date / Services) */
+.project-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.meta-block {
+    padding:1rem;
+}
+
+.meta-block h4,
+.info-block h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  letter-spacing: 0.06em;
+}
+
+.meta-block p,
+.info-block p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
+/*⑤Project Description Section */
+.project-body h4 {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.project-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+
+/*⑥Project Image Gallery*/
+.project-gallery {
+  display: grid;
+  
+  gap: 20px;
+  padding:2rem;
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid #ddd;
+  width:100%;
+  background-color: #fff;
+  z-index: 1000; 
+  position: fixed;
+}
+
+.nav-left a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 200;
+}
+
+.nav-left span {
+  color: #999;
+  font-weight: 400;
+}
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-center h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #444;
+  font-weight: 200;
+  white-space: nowrap;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2px;
+  background-color: #333;
+  border-radius: 1px;
+}
+
+
+.back-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.back-link .back-text {
+  margin-left: 4px;
+  color: #999;
+  font-weight: 400;
+}
+
+
+@media (max-width: 1024px) {
+  .back-link .back-text {
+    display: none;
+  }
+    .nav-center h2{
+    transform: none;
+
+  }
+}
+@media (max-width: 582px) {
+.project-meta {
+    justify-content: left;
+}
+
+.project-heading h1 {
+text-align: left;
+font-size: 2.5rem;
+
+}
+}
